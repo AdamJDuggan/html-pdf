@@ -1,11 +1,10 @@
-extends layout.pug
+html
+head  
+body 
+    .container
+        h1 Pug template working!
+        h2= name
+        h3 #{name2}
 
-block subtitle
-    |#{subtitle}
 
-block content
-    p Hi #{name},
-    | Thank you for expressing an interest in #{product}. Here is a copy of your enquiry that has been forwarded to the team.
-    p Product: #{product}
-    p Organisation: #{organisation}
-    p Message: #{message}
+

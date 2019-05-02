@@ -13,6 +13,7 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
+    "file-reader": "^1.1.1",
     "html-pdf": "^2.2.0",
     "nodemon": "^1.18.11",
     "pug": "^2.0.3"
