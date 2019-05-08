@@ -4,8 +4,6 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link href='/static/font.otf' rel='stylesheet'>
 
@@ -14,12 +12,18 @@
 		body {
 			height: 210mm;
 			width: 297mm;
-			border: 1px solid black;
 
 		}
 
+		@font-face {
+			font-family: "VAG Rounded";
+			font-style: normal;
+			font-weight: normal;
+			src: url(/static/font.otf) format("opentype");
+		}
+
 		.ralewayFont {
-			font-family: Raleway, 'Segoe UI', Tahoma, sans-serif;
+			font-family: 'Raleway', 'Segoe UI', Tahoma, sans-serif;
 			font-size: 25px;
 			font-weight: 500;
 		}
@@ -27,13 +31,15 @@
 		.vagFont {
 			font-family: 'VAG Rounded', Tahoma, Geneva, Verdana, sans-serif;
 			font-size: 55px;
+			font-weight: 100;
 		}
 
 		.vagFontSmall {
 			font-family: 'VAG Rounded', Tahoma, Geneva, Verdana, sans-serif;
 			font-size: 30px;
+			text-decoration: underline;
+			font-weight: 600;
 		}
-
 
 		.bg {
 			background-image: url("bg.png");
@@ -43,28 +49,29 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
+
+		.col-8 {
+			margin-left: 400px;
+		}
 	</style>
 </head>
 
 <body>
 	<div class="bg">
-		<div style="height: 80px;">
+		<div style="height: 10px;">
 
 		</div>
-		<div class="row ">
-			<div class="col-4">
-			</div>
-			<div class="col-8">
-				<h1 class="mb-3 mt-2 vagFont">Certificate of Completion</h1>
-				<h2 class="vagFontSmall">Practice Unbound</h2>
-				<div style="height: 90px;"></div>
-				<h2 class="ralewayFont">This is to certify that</h2>
-				<h1 class="my-3 vagFont">Sarah James</h1>
-				<h2 class="mb-1 ralewayFont">has successfully completed Workflow e-learning</h2>
-				<h2 class="mb-4 ralewayFont">Modules 1-6</h2>
-				<h2 class="ralewayFont">Awarded on 3rd May 2019</h2>
-			</div>
+		<div class="col-8">
+			<h1 class="vagFont">Certificate of Completion</h1>
+			<h2 class="vagFontSmall">Practice Unbound</h2>
+			<div style="height: 20px;"></div>
+			<h2 class="ralewayFont">This is to certify that</h2>
+			<h1 class="vagFont">Sarah James</h1>
+			<h2 class="ralewayFont">has successfully completed Workflow e-learning</h2>
+			<h2 class="ralewayFont">Modules 1-6</h2>
+			<h2 class="ralewayFont">Awarded on 3rd May 2019</h2>
 		</div>
+
 	</div>
 
 

@@ -1,10 +1,56 @@
+doctype html
 html
-head  
-body 
-    .container
-        h1 Pug template working!
-        h2= name
-        h3 #{name2}
+  head
+    meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+    link(href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet')
+    link(href='/static/font.otf')
+    style.
+      html,
+      body {
+      height: 210mm;
+      width: 297mm;
+      }
+      .ralewayFont {
+      font-family: Raleway, 'Segoe UI', Tahoma, sans-serif;
+      font-size: 25px;
+      font-weight: 100;
+      }
+      @font-face {
+      font-family: "VAGRounded";
+      font-style: normal;
+      font-weight: Normal;
+      src: url('/static/VAGRounded.ttf') format("opentype");
+      }
 
-
+      .vagFont {
+      font-family: 'VAGRounded', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 55px;
+      }
+      .vagFontSmall {
+      font-family: 'VAGRounded', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 30px;
+      }
+      .bg {
+      background-image:url('/static/bg.png');
+      height: 100%;
+      width: 100%;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+  body
+    .bg
+      .row
+        .col-4
+        .col-8
+          h1.mb-3.mt-2.vagFont Certificate of Completion
+          h2.vagFontSmall Practice Unbound
+          div(style='height: 90px;')
+          h2.ralewayFont This is to certify that
+          h1.my-3.vagFont Sarah James
+          h2.mb-1.ralewayFont has successfully completed Workflow e-learning
+          h2.mb-4.ralewayFont Modules 1-5
+          h2.ralewayFont Awarded on 3rd May 2019
 
